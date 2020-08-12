@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+# Customer.delete_all 
+
+
+# 30.times do 
+#   fullnameArr = Faker::Name.name.split(" ")
+#   Customer.create(
+#     name:fullnameArr[0],
+#     lastname:fullnameArr[1],
+#     phone:Faker::Base.numerify('###-###-####')
+#   )
+# end 
