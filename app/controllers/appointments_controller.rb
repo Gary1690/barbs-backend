@@ -15,6 +15,12 @@ class AppointmentsController < ApplicationController
     render json: appointment
   end
 
+  def pay
+    appointment = Appointment.find_by(id:params[:id])
+    appointment.update(appointment_params)
+    render json: appointment
+  end
+
   private 
   def appointment_params 
     params.require(:appointment).permit!

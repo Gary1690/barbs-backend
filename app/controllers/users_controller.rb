@@ -5,7 +5,10 @@ class UsersController < ApplicationController
     render json: {user:user, appointments:user.appointments }
   end
 
-  
+  def update 
+    byebug
+  end
+
   private 
   def user_params 
     params.require(:user).permit!
