@@ -9,17 +9,17 @@ class AppointmentsController < ApplicationController
     byebug
   end
 
+  def show 
+    appointment = Appointment.find_by(id:params[:id])
+    render json: appointment, include: [:customer]
+  end 
+
   def destroy
     appointment = Appointment.find_by(id:params[:id])
     appointment.destroy
     render json: appointment
   end
 
-  def pay
-    appointment = Appointment.find_by(id:params[:id])
-    appointment.update(appointment_params)
-    render json: appointment
-  end
 
   private 
   def appointment_params 

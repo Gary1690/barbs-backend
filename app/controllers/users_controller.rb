@@ -6,7 +6,18 @@ class UsersController < ApplicationController
   end
 
   def update 
-    byebug
+    user = User.find(params[:id])
+    if params[:picture] != "null"
+      user.picture = params[:picture]
+    end
+    user.update(filtered_params)
+    render json: user
+  end
+
+  def update_password
+    user = User.find(params[:id])
+    user.update(user_params)
+    render json: user
   end
 
   private 
@@ -14,5 +25,7 @@ class UsersController < ApplicationController
     params.require(:user).permit!
   end
 
-
+  def  filtered_params 
+    params.permit(:name,:lastname,:username,:email)
+  end
 end

@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-
+  patch 'users/update/password/:id', to: 'user#update_password'
   post '/users/login', to: 'users#login'
-  patch 'appointments/pay/:id', to: 'appointments#pay'
   resources :invoice_lines
   resources :services
   resources :invoices
