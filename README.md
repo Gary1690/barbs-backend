@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**BARSMS
 
-Things you may want to cover:
+BARSMS is a web-application with a Reactjs frontend and  Rails backend that serves as an appointment management application for a barbershop. Allows the user to create and manage appointments, register and manage customers, and process appointment payments.
 
-* Ruby version
+**Front-End Repo
 
-* System dependencies
+https://github.com/Gary1690/barbs-frontend
 
-* Configuration
+**Requires
 
-* Database creation
+ruby --version '2.6.1'
+rails --version '6.0.3',
 
-* Database initialization
+**Demo Link
+https://www.youtube.com/watch?v=IWUlr6_GirA
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
