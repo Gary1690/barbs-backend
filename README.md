@@ -11,8 +11,10 @@ https://github.com/Gary1690/barbs-frontend
 **Requires
 
 ruby --version '2.6.1'
-rails --version '6.0.3',
+
+rails --version '6.0.3'
 
 **Demo Link
+
 https://www.youtube.com/watch?v=IWUlr6_GirA
 
